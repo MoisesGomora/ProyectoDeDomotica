@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOMOTICA</title>
+  <style>
+    h1{
+      color: cyan;
+    }
+    h2{
+      color:darkblue;
+      align-content: center;
+      background-color: orange;
+    }
+    body{
+    background-image: url(https://robotesfera.com/wp-content/uploads/2019/02/que-es-la-domotica-696x321.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+    #tabla1{
+      width: 70%;
+      height: 70%;
+      background-image: url(https://i.postimg.cc/bJCBxptD/PLANTAALTA.png);
+      background-position: inherit;
+      background-repeat: no-repeat;
+      background-size: 105% 105%;
+      box-shadow:  0 0 10px 5px rgba(0,0,0,0.6);
+      border-radius:25px
+    }
+    td{
+      width: 20%;
+    }
+    #tabla2{
+      width: 70%;
+      height: 70%;
+      background-image: url(https://i.postimg.cc/6pjMF5jY/fondo2.png);
+      background-position: inherit;
+      background-repeat: no-repeat;
+      background-size: 105% 105%;
+      box-shadow:  0 0 10px 5px rgba(0,0,0,0.6);
+      border-radius:25px
+    }
+    h3{
+      color: darkblue;
+      background-color: coral;
+    }
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+
+<body>
+  <input type="checkbox" id="Timbre">
+<audio id="xyz" src="Timbre.wav" preload="auto"></audio>
+<h1 align = "center">DOMOTICA</h1>
+<table align="center" id="tabla1">
+  <tr>
+    <td align="center">
+      <h2 ><p>ESTUDIO<h3 id="temperatura"></h3></p></h2><button id="light" onclick="document.getElementById('myImage').src='https://i.postimg.cc/0NZDh5xV/focoon.png'">ENCENDER</button>
+        <br><img id="myImage" src="https://i.postimg.cc/Z5t8dDVx/focooff.png" style="width: 110px"><br>
+        <button id="light2" onclick="document.getElementById('myImage').src='https://i.postimg.cc/Z5t8dDVx/focooff.png'">APAGAR</button>
+           
+      </td>
+    <td align="center">
+      <h2><p>BAÑO</p></h2><h3 id="temperatura2"></h3><button id="light3" onclick="document.getElementById('myImage2').src='https://i.postimg.cc/0NZDh5xV/focoon.png'">ENCENDER</button> 
+        <br><img id="myImage2" src="https://i.postimg.cc/Z5t8dDVx/focooff.png" style="width: 110px"><br>
+        <button id="light4" onclick="document.getElementById('myImage2').src='https://i.postimg.cc/Z5t8dDVx/focooff.png'">APAGAR</button>   
+    </td>
+    <td align="center">
+      <h2><p>RECAMARA PRINCIPAL</p></h2><h3 id="temperatura3"></h3><button id="light5" onclick="document.getElementById('myImage3').src='https://i.postimg.cc/0NZDh5xV/focoon.png'">ENCENDER</button> 
+        <br><img id="myImage3" src="https://i.postimg.cc/Z5t8dDVx/focooff.png" style="width: 110px">
+        <br><button id="light6" onclick="document.getElementById('myImage3').src='https://i.postimg.cc/Z5t8dDVx/focooff.png'">APAGAR</button>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <h2><p>TERRAZA</p></h2><h3 id="temperatura4"></h3><button id="light7" onclick="document.getElementById('myImage4').src='https://i.postimg.cc/0NZDh5xV/focoon.png'">ENCENDER</button> 
+        <br><img id="myImage4" src="https://i.postimg.cc/Z5t8dDVx/focooff.png" style="width: 110px"><br>
+        <button id="light8" onclick="document.getElementById('myImage4').src='https://i.postimg.cc/Z5t8dDVx/focooff.png'">APAGAR</button>
+    </td>
+    <td>
+    </td>
+    <td align="center">
+      <h2><p>RECAMARA INDIVIDUAL</p></h2><h3 id="temperatura5"></h3><button id="light9" onclick="document.getElementById('myImage5').src='https://i.postimg.cc/0NZDh5xV/focoon.png'">ENCENDER</button> 
+        <br><img id="myImage5" src="https://i.postimg.cc/Z5t8dDVx/focooff.png" style="width: 110px"><br>
+        <button id="light10" onclick="document.getElementById('myImage5').src='https://i.postimg.cc/Z5t8dDVx/focooff.png'">APAGAR</button>
+    </td>
+  </tr>
+</table>
+<table align="center" id="tabla2">
+  <tr>
+    <td align="center">
+      <h2><p>COMEDOR</p></h2><h3 id="temperatura6"></h3><button id="light11" onclick="document.getElementById('myImage6').src='https://i.postimg.cc/0NZDh5xV/focoon.png'">ENCENDER</button>
+        <br><img id="myImage6" src="https://i.postimg.cc/Z5t8dDVx/focooff.png" style="width: 110px"><br>
+        <button id="light12" onclick="document.getElementById('myImage6').src='https://i.postimg.cc/Z5t8dDVx/focooff.png'">APAGAR</button>
+    </td>
+    <td align="center">
+      <h2><p>COCINA</p></h2><h3 id="temperatura7"></h3><button id="light13" onclick="document.getElementById('myImage7').src='https://i.postimg.cc/0NZDh5xV/focoon.png'">ENCENDER</button>
+      <br><img id="myImage7" src="https://i.postimg.cc/Z5t8dDVx/focooff.png" style="width: 110px"><br>
+      <button id="light14" onclick="document.getElementById('myImage7').src='https://i.postimg.cc/Z5t8dDVx/focooff.png'">APAGAR</button>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <h2><p>SALA</p></h2><h3 id="temperatura8"></h3><button id="light15" onclick="document.getElementById('myImage8').src='https://i.postimg.cc/0NZDh5xV/focoon.png'">ENCENDER</button>
+      <br><img id="myImage8" src="https://i.postimg.cc/Z5t8dDVx/focooff.png" style="width: 110px"><br>
+      <button id="light16" onclick="document.getElementById('myImage8').src='https://i.postimg.cc/Z5t8dDVx/focooff.png'">APAGAR</button>
+    </td>
+  </tr>
+</table>
+<table align="center">
+  <tr>
+    <td align="center">
+      <h2><p>PUERTA</p></h2><button id="puerta" onclick="document.getElementById('puerta3').src='https://i.postimg.cc/5yNHpcMR/puerta2.png'">ABRIR</button>
+      <br><img id="puerta3" src="https://i.postimg.cc/ZRW028QT/puerta.png" style="width: 110px"><br>
+      <button id="puerta1" onclick="document.getElementById('puerta3').src='https://i.postimg.cc/ZRW028QT/puerta.png'">CERRAR</button>
+    </td>
+  </tr>
+</table>
+<script src="/socket.io/socket.io.js"></script> <!-- include socket.io client side script -->
+<script>
+  var socket = io(); //load socket.io-client and connect to the host that serves the page
+window.addEventListener("load", function(){ //when page loads
+  var lightbox = document.getElementById("Timbre");
+  lightbox.addEventListener("change", function() { //add event listener for when checkbox changes
+    socket.emit("Timbre", Number(this.checked)); //send button status to server (as 1 or 0)
+  });
+});
+socket.on('Timbre', function (data) { //get button status from client
+  document.getElementById("Timbre").checked = data; //change checkbox according to push button on Raspberry Pi
+  socket.emit("Timbre", data); //send push button status to back to server
+  pulsar();
+});
+socket.on('temp',function(data){
+  let tempe = document.getElementById('temperatura');
+  let tempe2 = document.getElementById('temperatura2');
+  let tempe3 = document.getElementById('temperatura3');
+  let tempe4 = document.getElementById('temperatura4');
+  let tempe5 = document.getElementById('temperatura5');
+  let tempe6 = document.getElementById('temperatura6');
+  let tempe7 = document.getElementById('temperatura7');
+  let tempe8 = document.getElementById('temperatura8');
+  tempe.innerHTML = `${data} ºC`;
+  tempe2.innerHTML= `${data} ºC`;
+  tempe3.innerHTML = `${data} ºC`;
+  tempe4.innerHTML = `${data} ºC`;
+  tempe5.innerHTML = `${data} ºC`;
+  tempe6.innerHTML = `${data} ºC`;
+  tempe7.innerHTML = `${data} ºC`;
+  tempe8.innerHTML = `${data} ºC`;
+})
+  function pulsar() {
+                        document.getElementById('xyz').play();
+                        alert("ESTAN TOCANDO LA PUERTA");
+                    }
+//estudio
+var socket = io(); //load socket.io-client and connect to the host that serves the page
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light");
+  btn.addEventListener("click", function() { 
+    socket.emit("domo", '0000'); //send button status to server (as 1 or 0)
+  });
+});
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light2");
+  btn.addEventListener("click", function() { //add event listener for when checkbox changes
+    socket.emit("domo", '0001'); //send button status to server (as 1 or 0)
+  });
+});
+//baño
+var socket = io(); //load socket.io-client and connect to the host that serves the page
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light3");
+  btn.addEventListener("click", function() { 
+    socket.emit("domo", '0010'); //send button status to server (as 1 or 0)
+  });
+});
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light4");
+  btn.addEventListener("click", function() { //add event listener for when checkbox changes
+    socket.emit("domo", '0011'); //send button status to server (as 1 or 0)
+  });
+});
+//recamara principal
+var socket = io(); //load socket.io-client and connect to the host that serves the page
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light5");
+  btn.addEventListener("click", function() { 
+    socket.emit("domo", '0100'); //send button status to server (as 1 or 0)
+  });
+});
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light6");
+  btn.addEventListener("click", function() { //add event listener for when checkbox changes
+    socket.emit("domo", '0101'); //send button status to server (as 1 or 0)
+  });
+});
+//terraza
+var socket = io(); //load socket.io-client and connect to the host that serves the page
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light7");
+  btn.addEventListener("click", function() { 
+    socket.emit("domo", '0110'); //send button status to server (as 1 or 0)
+  });
+});
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light8");
+  btn.addEventListener("click", function() { //add event listener for when checkbox changes
+    socket.emit("domo", '0111'); //send button status to server (as 1 or 0)
+  });
+});
+//Recamara Individual
+var socket = io(); //load socket.io-client and connect to the host that serves the page
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light9");
+  btn.addEventListener("click", function() { 
+    socket.emit("domo", '1000'); //send button status to server (as 1 or 0)
+  });
+});
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light10");
+  btn.addEventListener("click", function() { //add event listener for when checkbox changes
+    socket.emit("domo", '1001'); //send button status to server (as 1 or 0)
+  });
+});
+//comedor
+var socket = io(); //load socket.io-client and connect to the host that serves the page
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light11");
+  btn.addEventListener("click", function() { 
+    socket.emit("domo", '1010'); //send button status to server (as 1 or 0)
+  });
+});
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light12");
+  btn.addEventListener("click", function() { //add event listener for when checkbox changes
+    socket.emit("domo", '1011'); //send button status to server (as 1 or 0)
+  });
+});
+//cocina
+var socket = io(); //load socket.io-client and connect to the host that serves the page
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light13");
+  btn.addEventListener("click", function() { 
+    socket.emit("domo", '1100'); //send button status to server (as 1 or 0)
+  });
+});
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light14");
+  btn.addEventListener("click", function() { //add event listener for when checkbox changes
+    socket.emit("domo", '1101'); //send button status to server (as 1 or 0)
+  });
+});
+//cocina
+var socket = io(); //load socket.io-client and connect to the host that serves the page
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light15");
+  btn.addEventListener("click", function() { 
+    socket.emit("domo", '1110'); //send button status to server (as 1 or 0)
+  });
+});
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("light16");
+  btn.addEventListener("click", function() { //add event listener for when checkbox changes
+    socket.emit("domo", '1111'); //send button status to server (as 1 or 0)
+  });
+});
+//puerta
+var socket = io(); //load socket.io-client and connect to the host that serves the page
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("puerta");
+  btn.addEventListener("click", function() { 
+    socket.emit("domo", 'O'); //send button status to server (as 1 or 0)
+  });
+});
+window.addEventListener("load", function(){ //when page loads
+  var btn = document.getElementById("puerta1");
+  btn.addEventListener("click", function() { //add event listener for when checkbox changes
+    socket.emit("domo", 'C'); //send button status to server (as 1 or 0)
+  });
+});
+</script>
+</body>
+</html>
